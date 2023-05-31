@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Конвертер римських цифр</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheets/styles.css">
+        <script src="scripts/main.js"></script>
+    </head>
+
+    <body>
+
+    <h1 class="title">Конвертація римських цифр в арабські та навпаки</h1>
+
+    <div class="funcblock" id="toRoman">
+        <div class="main-text">
+            <h2>Конвертація в римські цифри</h2>
+            <h5>Максимальне число: 3999</h5>
+        </div>
+
+        <div class="input" id="intinp">
+            <input type="number" id="intValue" value="2023" min="1"
+                   max="9999" maxlength="4">
+        </div>
+
+        <div class="button">
+            <button onclick="convert.toRom()">Конвертувати</button>
+        </div>
+
+        <div class="result" id="FIRST-RESULT">
+            <h5 class="total" id="total-rom"></h5>
+        </div>
+    </div>
+    <!- ====================================== -!>
+    <div class="funcblock" id="toInteger">
+        <div class="main-text">
+            <h2>Конвертація в арабські цифри</h2>
+            <h5>Максимальне число: 3999</h5>
+        </div>
+
+        <div class="input" id="rominp">
+            <input type="text" id="strValue" value="MMXXIII" maxlength="7">
+        </div>
+
+        <div class="button">
+            <button onclick="convert.toInt()">Конвертувати</button>
+        </div>
+		
+		<div class="result" id="SECOND-RESULT">
+			<h5 id="T9"></h5>
+			<h1 class="total" id="totalInt"></h1>
+		</div>
+		
+    </div>
+
+    </body>
+</html>

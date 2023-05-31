@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+body {
+    background: #98aafd;
+}
+
+maintext {
+    display: block;
+    text-align: center;
+    background: white;
+    margin: 10px;
+    padding: 1px;
+    border-radius: 6px;
+    border: white 6px;
+    font-family: 'Roboto', sans-serif;
+}
+
+maintext h1 {
+    text-align: center;
+}
+
+input {
+    width: 80px;
+    height: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+    border: white;
+}
+
+.matrix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#determined {
+    display: none;
+}
+
+.matrix table tr td {
+    background: white;
+    border-radius: 3px;
+    width: 80px;
+    height: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+}
+
+.result + maintext {
+    margin-top: 50px;
+}
+
+.getResultButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.getResultButton button {
+    height: 40px;
+    border-radius: 6px;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    border: none;
+}
+
+.result {
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    display:flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background: #c6caff;
+}
+.result h2 {
+    margin: 10px;
+}
+
+@media screen and (min-width: 715px) {
+    maintext {
+        display: block;
+        width: 60vw;
+        background: white;
+        margin: 0 auto;
+        padding: 6px;
+        border-radius: 6px;
+        border: white 6px;
+        font-family: 'Roboto', sans-serif;
+        box-shadow: 2px 2px 4px rgba(101, 101, 190, 0.52);
+    }
+
+    maintext h1 {
+        text-align: center;
+    }
+
+    input {
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: x-large;
+        border: white;
+        box-shadow: 2px 2px 4px rgba(101, 101, 190, 0.52);
+    }
+
+    .matrix {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #determined {
+        display: none;
+    }
+
+    .matrix table tr td {
+        background: white;
+        border-radius: 3px;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: x-large;
+        box-shadow: 2px 2px 4px rgba(101, 101, 190, 0.52);
+    }
+
+    .getResultButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .getResultButton button {
+        height: 40px;
+        border-radius: 6px;
+        font-family: 'Roboto', sans-serif;
+        margin: 10px;
+        border: none;
+        box-shadow: 2px 2px 4px rgba(101, 101, 190, 0.52);
+    }
+
+    .result {
+        font-family: 'Roboto', sans-serif;
+        font-size: medium;
+        border-radius: 3px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        background: #c6caff;
+        width: 220px;
+        margin: 0 auto;
+        box-shadow: 2px 2px 4px rgba(101, 101, 190, 0.52);
+    }
+    .result h2 {
+        margin: 10px;
+    }
+}

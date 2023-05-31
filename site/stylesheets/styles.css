@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@keyframes hoverButton {
+      0%   {color: #a25f46;}
+      30%  {color: #c95c37;}
+      60%  {color: #d78960;}
+      90% {color: #653c2d;}
+      100% {color: #a25f46;}
+    }
+
+body {
+    height: 100vh;
+    background: url("img/background.svg") center center no-repeat;
+    background-size: cover;
+}
+
+.note {
+    position: relative;
+    top: 20px;
+    color: #929292;
+}
+
+.note sub {
+    font-size: 12px;
+    float: right;
+    text-align: right;
+}
+
+.selectBox {
+    display: block;
+    text-align: left;
+    width: 80vw;
+    height: fit-content;
+    padding: 20px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 6px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 10px;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+}
+
+.selectBox:hover {
+    color: white;
+    background: #747474;
+}
+
+.selectBox:active {
+    color: white;
+    background: #747474;
+}
+
+.selectBox + .selectBox {
+    margin-top: 10px;
+}
+
+.selectBox h1 sup{
+    color: #929292;
+    font-size: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .note {
+        position: relative;
+        top: 20px;
+        color: #929292;
+    }
+
+    .selectBox {
+        display: block;
+        text-align: left;
+        width: 80vw;
+        height: fit-content;
+        padding: 30px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 6px;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 14px;
+        touch-action: manipulation;
+        cursor: pointer;
+        user-select: none;
+        transition: width 0.25s;
+    }
+
+    .selectBox:hover {
+        width: 79.5vw;
+        background: white;
+        animation-duration: 3.5s;
+        animation-name: hoverButton;
+        animation-iteration-count: infinite;
+    }
+
+    .selectBox + .selectBox {
+        margin-top: 10px;
+    }
+
+    .selectBox h1 sup{
+        color: #929292;
+        font-size: 16px;
+    }
+}

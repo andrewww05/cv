@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Калькулятор матриць 3х3</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+  <link href="stylesheets/styles.css" rel="stylesheet">
+  <script src="scripts/main.js"></script>
+</head>
+<body>
+<maintext>
+  <h1>Визначник матриці 3x3</h1>
+</maintext>
+
+<div class="matrix">
+  <table class="center">
+      <tr>
+        <td><input type="number" id="a1" value="1"></td>
+        <td><input type="number" id="a2" value="2"></td>
+        <td><input type="number" id="a3" value="3"></td>
+      </tr>
+      <tr>
+        <td><input type="number" id="b1" value="0"></td>
+        <td><input type="number" id="b2" value="1"></td>
+        <td><input type="number" id="b3" value="4"></td>
+      </tr>
+      <tr>
+        <td><input type="number" id="c1" value="5"></td>
+        <td><input type="number" id="c2" value="6"></td>
+        <td><input type="number" id="c3" value="0"></td>
+      </tr>
+    </table>
+</div>
+
+<div class="getResultButton">
+  <button class="getres_btn" onclick="matrix.determine3x3(1)">Отримати визначник матриці</button>
+</div>
+
+<div class="result">
+  <h2>Результат:</h2>
+  <h2 style="color: white" id="total"></h2>
+</div>
+
+<maintext>
+  <h1>Обернена матриця 3x3</h1>
+</maintext>
+
+<span class="getResultButton">
+    <button class="getres_btn" id="toggle" onclick="matrix.findInvertedMatrix()">Отримати обернену матрицю</button>
+</span>
+
+<div class="matrix" id="determined">
+  <table class="center">
+    <tr>
+      <td id="inv1"></td>
+      <td id="inv2"></td>
+      <td id="inv3"></td>
+    </tr>
+    <tr>
+      <td id="inv4"></td>
+      <td id="inv5"></td>
+      <td id="inv6"></td>
+    </tr>
+    <tr>
+      <td id="inv7"></td>
+      <td id="inv8"></td>
+      <td id="inv9"></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
